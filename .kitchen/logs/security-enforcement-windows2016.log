@@ -1,0 +1,192 @@
+I, [2023-07-06T03:10:19.282662 #13524]  INFO -- security-enforcement-windows2016: -----> Cleaning up any prior instances of <security-enforcement-windows2016>
+I, [2023-07-06T03:10:19.284845 #13524]  INFO -- security-enforcement-windows2016: -----> Destroying <security-enforcement-windows2016>...
+I, [2023-07-06T03:10:33.139362 #13524]  INFO -- security-enforcement-windows2016: ==> default: VM not created. Moving on...
+I, [2023-07-06T03:10:33.207457 #13524]  INFO -- security-enforcement-windows2016: Vagrant instance <security-enforcement-windows2016> destroyed.
+I, [2023-07-06T03:10:33.208763 #13524]  INFO -- security-enforcement-windows2016: Finished destroying <security-enforcement-windows2016> (0m13.92s).
+I, [2023-07-06T03:10:33.209399 #13524]  INFO -- security-enforcement-windows2016: -----> Testing <security-enforcement-windows2016>
+I, [2023-07-06T03:10:33.209776 #13524]  INFO -- security-enforcement-windows2016: -----> Creating <security-enforcement-windows2016>...
+I, [2023-07-06T03:10:39.065760 #13524]  INFO -- security-enforcement-windows2016: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2023-07-06T03:10:45.603314 #13524]  INFO -- security-enforcement-windows2016: ==> default: Importing base box 'windows2016'...
+I, [2023-07-06T03:12:08.852139 #13524]  INFO -- security-enforcement-windows2016: [KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2023-07-06T03:12:10.064205 #13524]  INFO -- security-enforcement-windows2016: ==> default: Setting the name of the VM: kitchen-win_server_security_standards-security-enforcement-windows2016
+I, [2023-07-06T03:12:11.165212 #13524]  INFO -- security-enforcement-windows2016: ==> default: Fixed port collision for 3389 => 3389. Now on port 2200.
+I, [2023-07-06T03:12:11.581140 #13524]  INFO -- security-enforcement-windows2016: ==> default: Clearing any previously set network interfaces...
+I, [2023-07-06T03:12:11.661156 #13524]  INFO -- security-enforcement-windows2016: ==> default: Preparing network interfaces based on configuration...
+I, [2023-07-06T03:12:11.661295 #13524]  INFO -- security-enforcement-windows2016:     default: Adapter 1: nat
+I, [2023-07-06T03:12:11.741122 #13524]  INFO -- security-enforcement-windows2016: ==> default: Forwarding ports...
+I, [2023-07-06T03:12:11.837152 #13524]  INFO -- security-enforcement-windows2016:     default: 3389 (guest) => 2200 (host) (adapter 1)
+I, [2023-07-06T03:12:11.837285 #13524]  INFO -- security-enforcement-windows2016:     default: 5985 (guest) => 55985 (host) (adapter 1)
+I, [2023-07-06T03:12:11.837383 #13524]  INFO -- security-enforcement-windows2016:     default: 5986 (guest) => 55986 (host) (adapter 1)
+I, [2023-07-06T03:12:11.837478 #13524]  INFO -- security-enforcement-windows2016:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2023-07-06T03:12:12.332146 #13524]  INFO -- security-enforcement-windows2016: ==> default: Running 'pre-boot' VM customizations...
+I, [2023-07-06T03:12:12.492175 #13524]  INFO -- security-enforcement-windows2016: ==> default: Booting VM...
+I, [2023-07-06T03:12:20.515414 #13524]  INFO -- security-enforcement-windows2016: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2023-07-06T03:12:21.310273 #13524]  INFO -- security-enforcement-windows2016:     default: WinRM address: 127.0.0.1:55985
+I, [2023-07-06T03:12:21.310463 #13524]  INFO -- security-enforcement-windows2016:     default: WinRM username: vagrant
+I, [2023-07-06T03:12:21.311228 #13524]  INFO -- security-enforcement-windows2016:     default: WinRM execution_time_limit: PT2H
+I, [2023-07-06T03:12:21.311326 #13524]  INFO -- security-enforcement-windows2016:     default: WinRM transport: negotiate
+I, [2023-07-06T03:17:21.033128 #13524]  INFO -- security-enforcement-windows2016: Timed out while waiting for the machine to boot. This means that
+I, [2023-07-06T03:17:21.033325 #13524]  INFO -- security-enforcement-windows2016: Vagrant was unable to communicate with the guest machine within
+I, [2023-07-06T03:17:21.033426 #13524]  INFO -- security-enforcement-windows2016: the configured ("config.vm.boot_timeout" value) time period.
+I, [2023-07-06T03:17:21.033620 #13524]  INFO -- security-enforcement-windows2016: 
+I, [2023-07-06T03:17:21.033723 #13524]  INFO -- security-enforcement-windows2016: If you look above, you should be able to see the error(s) that
+I, [2023-07-06T03:17:21.033823 #13524]  INFO -- security-enforcement-windows2016: Vagrant had when attempting to connect to the machine. These errors
+I, [2023-07-06T03:17:21.033920 #13524]  INFO -- security-enforcement-windows2016: are usually good hints as to what may be wrong.
+I, [2023-07-06T03:17:21.034025 #13524]  INFO -- security-enforcement-windows2016: 
+I, [2023-07-06T03:17:21.034148 #13524]  INFO -- security-enforcement-windows2016: If you're using a custom box, make sure that networking is properly
+I, [2023-07-06T03:17:21.034246 #13524]  INFO -- security-enforcement-windows2016: working and you're able to connect to the machine. It is a common
+I, [2023-07-06T03:17:21.034345 #13524]  INFO -- security-enforcement-windows2016: problem that networking isn't setup properly in these boxes.
+I, [2023-07-06T03:17:21.034443 #13524]  INFO -- security-enforcement-windows2016: Verify that authentication configurations are also setup properly,
+I, [2023-07-06T03:17:21.034541 #13524]  INFO -- security-enforcement-windows2016: as well.
+I, [2023-07-06T03:17:21.034634 #13524]  INFO -- security-enforcement-windows2016: 
+I, [2023-07-06T03:17:21.034729 #13524]  INFO -- security-enforcement-windows2016: If the box appears to be booting properly, you may want to increase
+I, [2023-07-06T03:17:21.034825 #13524]  INFO -- security-enforcement-windows2016: the timeout ("config.vm.boot_timeout") value.
+E, [2023-07-06T03:17:21.062619 #13524] ERROR -- security-enforcement-windows2016: Create failed on instance <security-enforcement-windows2016>.
+E, [2023-07-06T03:17:21.062899 #13524] ERROR -- security-enforcement-windows2016: ------Exception-------
+E, [2023-07-06T03:17:21.062995 #13524] ERROR -- security-enforcement-windows2016: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2023-07-06T03:17:21.063083 #13524] ERROR -- security-enforcement-windows2016: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'windows2016'...
+[KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+==> default: Setting the name of the VM: kitchen-win_server_security_standards-security-enforcement-windows2016
+==> default: Fixed port collision for 3389 => 3389. Now on port 2200.
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 3389 (guest) => 2200 (host) (adapter 1)
+    default: 5985 (guest) => 55985 (host) (adapter 1)
+    default: 5986 (guest) => 55986 (host) (adapter 1)
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: WinRM address: 127.0.0.1:55985
+    default: WinRM username: vagrant
+    default: WinRM execution_time_limit: PT2H
+    default: WinRM transport: negotiate
+STDERR: Timed out while waiting for the machine to boot. This means that
+Vagrant was unable to communicate with the guest machine within
+the configured ("config.vm.boot_timeout" value) time period.
+
+If you look above, you should be able to see the error(s) that
+Vagrant had when attempting to connect to the machine. These errors
+are usually good hints as to what may be wrong.
+
+If you're using a custom box, make sure that networking is properly
+working and you're able to connect to the machine. It is a common
+problem that networking isn't setup properly in these boxes.
+Verify that authentication configurations are also setup properly,
+as well.
+
+If the box appears to be booting properly, you may want to increase
+the timeout ("config.vm.boot_timeout") value.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2023-07-06T03:17:21.063181 #13524] ERROR -- security-enforcement-windows2016: ----------------------
+E, [2023-07-06T03:17:21.063270 #13524] ERROR -- security-enforcement-windows2016: ------Backtrace-------
+E, [2023-07-06T03:17:21.063357 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2023-07-06T03:17:21.063445 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/shell_out.rb:58:in `run_command'
+E, [2023-07-06T03:17:21.063532 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:455:in `run_command'
+E, [2023-07-06T03:17:21.063620 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:402:in `run'
+E, [2023-07-06T03:17:21.063707 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:486:in `run_vagrant_up'
+E, [2023-07-06T03:17:21.063794 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:112:in `create'
+E, [2023-07-06T03:17:21.063881 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `public_send'
+E, [2023-07-06T03:17:21.063972 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `block in perform_action'
+E, [2023-07-06T03:17:21.064060 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:548:in `block in synchronize_or_call'
+E, [2023-07-06T03:17:21.064147 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:546:in `synchronize'
+E, [2023-07-06T03:17:21.064233 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:546:in `synchronize_or_call'
+E, [2023-07-06T03:17:21.064320 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2023-07-06T03:17:21.064406 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2023-07-06T03:17:21.064494 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2023-07-06T03:17:21.064581 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `perform_action'
+E, [2023-07-06T03:17:21.064668 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:394:in `create_action'
+E, [2023-07-06T03:17:21.064756 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2023-07-06T03:17:21.064842 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2023-07-06T03:17:21.064937 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2023-07-06T03:17:21.065027 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2023-07-06T03:17:21.065114 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2023-07-06T03:17:21.065201 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:162:in `verify'
+E, [2023-07-06T03:17:21.065288 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:191:in `block in test'
+E, [2023-07-06T03:17:21.065375 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2023-07-06T03:17:21.065462 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:187:in `test'
+E, [2023-07-06T03:17:21.065549 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2023-07-06T03:17:21.065636 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2023-07-06T03:17:21.065722 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2023-07-06T03:17:21.065826 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2023-07-06T03:17:21.065918 #13524] ERROR -- security-enforcement-windows2016: ----End Backtrace-----
+E, [2023-07-06T03:17:21.066003 #13524] ERROR -- security-enforcement-windows2016: ---Nested Exception---
+E, [2023-07-06T03:17:21.066088 #13524] ERROR -- security-enforcement-windows2016: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2023-07-06T03:17:21.066175 #13524] ERROR -- security-enforcement-windows2016: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'windows2016'...
+[KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+==> default: Setting the name of the VM: kitchen-win_server_security_standards-security-enforcement-windows2016
+==> default: Fixed port collision for 3389 => 3389. Now on port 2200.
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 3389 (guest) => 2200 (host) (adapter 1)
+    default: 5985 (guest) => 55985 (host) (adapter 1)
+    default: 5986 (guest) => 55986 (host) (adapter 1)
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: WinRM address: 127.0.0.1:55985
+    default: WinRM username: vagrant
+    default: WinRM execution_time_limit: PT2H
+    default: WinRM transport: negotiate
+STDERR: Timed out while waiting for the machine to boot. This means that
+Vagrant was unable to communicate with the guest machine within
+the configured ("config.vm.boot_timeout" value) time period.
+
+If you look above, you should be able to see the error(s) that
+Vagrant had when attempting to connect to the machine. These errors
+are usually good hints as to what may be wrong.
+
+If you're using a custom box, make sure that networking is properly
+working and you're able to connect to the machine. It is a common
+problem that networking isn't setup properly in these boxes.
+Verify that authentication configurations are also setup properly,
+as well.
+
+If the box appears to be booting properly, you may want to increase
+the timeout ("config.vm.boot_timeout") value.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2023-07-06T03:17:21.066353 #13524] ERROR -- security-enforcement-windows2016: ----------------------
+E, [2023-07-06T03:17:21.066443 #13524] ERROR -- security-enforcement-windows2016: ------Backtrace-------
+E, [2023-07-06T03:17:21.066530 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2023-07-06T03:17:21.066618 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/shell_out.rb:58:in `run_command'
+E, [2023-07-06T03:17:21.066705 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:455:in `run_command'
+E, [2023-07-06T03:17:21.066792 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:402:in `run'
+E, [2023-07-06T03:17:21.066883 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:486:in `run_vagrant_up'
+E, [2023-07-06T03:17:21.066970 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/kitchen-vagrant-1.4.0/lib/kitchen/driver/vagrant.rb:112:in `create'
+E, [2023-07-06T03:17:21.067057 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `public_send'
+E, [2023-07-06T03:17:21.067144 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `block in perform_action'
+E, [2023-07-06T03:17:21.067231 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:548:in `block in synchronize_or_call'
+E, [2023-07-06T03:17:21.067319 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:546:in `synchronize'
+E, [2023-07-06T03:17:21.067406 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:546:in `synchronize_or_call'
+E, [2023-07-06T03:17:21.067493 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2023-07-06T03:17:21.067579 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2023-07-06T03:17:21.067667 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2023-07-06T03:17:21.067753 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:484:in `perform_action'
+E, [2023-07-06T03:17:21.067841 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:394:in `create_action'
+E, [2023-07-06T03:17:21.067935 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2023-07-06T03:17:21.068032 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2023-07-06T03:17:21.068124 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2023-07-06T03:17:21.068213 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2023-07-06T03:17:21.068299 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2023-07-06T03:17:21.068386 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:162:in `verify'
+E, [2023-07-06T03:17:21.068473 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:191:in `block in test'
+E, [2023-07-06T03:17:21.068563 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2023-07-06T03:17:21.068666 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:187:in `test'
+E, [2023-07-06T03:17:21.068776 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2023-07-06T03:17:21.068873 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2023-07-06T03:17:21.068961 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2023-07-06T03:17:21.069050 #13524] ERROR -- security-enforcement-windows2016: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2023-07-06T03:17:21.069143 #13524] ERROR -- security-enforcement-windows2016: ----End Backtrace-----

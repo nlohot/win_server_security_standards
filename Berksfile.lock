@@ -1,0 +1,7 @@
+DEPENDENCIES
+  win_server_security_standards
+    path: .
+    metadata: true
+
+GRAPH
+  win_server_security_standards (0.1.0)

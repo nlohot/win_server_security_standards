@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |c|
+  c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+  c.vm.box = "windows2019"
+  c.vm.hostname = "windows2019"
+  c.vm.boot_timeout = 1800
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.provider :virtualbox do |p|
+    p.name = "kitchen-win_server_security_standards-default-windows2019-2a8d8772-78d3-4ea0-b7b1-90d142cb846a"
+    p.customize ["modifyvm", :id, "--audio", "none"]
+  end
+end

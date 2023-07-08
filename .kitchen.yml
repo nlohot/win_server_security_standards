@@ -1,0 +1,34 @@
+---
+driver:
+  name: vagrant
+  boot_timeout: 1800
+
+provisioner:
+  name: chef_zero
+  # You may wish to disable always updating cookbooks in CI or other testing environments.
+  # For example:
+  #   always_update_cookbooks: <%= !ENV['CI'] %>
+  # always_update_cookbooks: true
+  data_bags_path: test/integration/default/data_bags
+
+verifier:
+  name: inspec
+
+transport:
+  connection_retries: 20
+  connection_timeout: 1800
+    
+platforms:
+  - name: windows2016
+    driver:
+      box: windows2016
+      vm_hostname: windows2016
+
+suites:
+  - name: default 
+    run_list:
+      - recipe[win_server_security_standards::win_server_security_policy]
+    verifier:
+      inspec_tests:
+        - path: test/integration/default/default_test.rb
+    attributes:

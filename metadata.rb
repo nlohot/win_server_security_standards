@@ -1,0 +1,11 @@
+name 'win_server_security_standards'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'All Rights Reserved'
+description 'Installs/Configures win_server_security_standards'
+long_description 'Installs/Configures win_server_security_standards'
+version '0.1.0'
+chef_version '>= 12.0'
+
+source_url 'https://github.com/nlohot/win_server_security_standards'
+issues_url 'https://github.com/nlohot/win_server_security_standards'

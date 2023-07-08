@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |c|
+  c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+  c.vm.box = "windows2016"
+  c.vm.hostname = "windows2016"
+  c.vm.boot_timeout = 1800
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.provider :virtualbox do |p|
+    p.name = "kitchen-win_server_security_standards-default-windows2016-d0e9073e-c453-4c89-99bb-de74bb25870b"
+    p.customize ["modifyvm", :id, "--audio", "none"]
+  end
+end
