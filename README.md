@@ -3,7 +3,7 @@
 This chef cookbook contains a chef recipe to enforce a set of Windows server hardening policies in order to secure Windows operating systems.
 These settings are recommended by various industry standards like CIS, NIST and frameworks, i.e. Mitre ATT&CK
 
-* The policies are categorized into different sections based on the nature of their implementation and the OS components that they're trying to secure: *
+* The policies are categorized into different sections based on the nature of their implementation and the OS components that they're trying to secure:
     1. Account and Password Policies
     2. Audit Policies
     3. Logging configuration
@@ -16,6 +16,6 @@ These settings are recommended by various industry standards like CIS, NIST and 
     10. User Right Assignment policies
     11. Windows System Object policies
 
-* To use this cookbook, add the below chef recipe to your node's runlist: *
+* To use this cookbook, add the below chef recipe to your node's runlist: 
 
-    recipe[win_server_security_standards::win_server_security_policy]
+        recipe[win_server_security_standards::win_server_security_policy]
