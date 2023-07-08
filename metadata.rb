@@ -1,6 +1,6 @@
 name 'win_server_security_standards'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Nandkishor Lohot'
+maintainer_email 'nand9lohot@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures win_server_security_standards'
 long_description 'Installs/Configures win_server_security_standards'
